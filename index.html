@@ -10,15 +10,19 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .container {display:flex; width: 300px; height:auto;
+    body {
+      display: flex; min-height: 100vh; margin: 0;align-items: center; background-color: lightblue;
+      justify-content: center;
+    }
+    .container {display:flex; width: 300px; height: auto;
     border-radius: 20px; align-items: center; justify-content: center; 
     flex-direction: column;
-    background: white;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px; text-align: center; margin: 50px auto;}
     .container img {width: 100%; border-radius: 20px; margin-bottom: 10px;}
     .text-content {
-      padding: 0,20px;
+      padding: 0 20px;
       justify-content: center;
       margin-bottom: 10px;
     }
@@ -40,7 +44,8 @@
     }
   </style>
 </head>
-<div class="container">
+  <body>
+  <div class="container">
   <img src="images/image-qr-code.png" type="image/png" link rel="qr-code" alt="qr-code"/>
     <div class="text-content">
       <h2>
@@ -55,4 +60,5 @@
       Coded by <a href="#">Dania</a>
     </div>
 </div>
+</body>
 </html>
